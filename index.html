@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportador de Bolsas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="Untitled (1).jpg" alt="Logo de Transportador" class="logo">
+        <h1>Transportador de Bolsas</h1>
+        <div id="cart-container">
+            <button id="cart-button"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>PORTA BOLSAS</h2>
+            <p>Al usar materiales reciclables o biodegradables, contribuyes a la reducción de plásticos en el medio ambiente.</p>
+        </section>
+        <section class="products">
+            <article class="product" data-id="1" data-name="Bolsa de Transporte 3D" data-price="29.99">
+                <div class="product-image-container">
+                    <img style="height: 150px;width: 200px;" src="./55248636-e533-492b-b0fc-3eca5fad5df5.jpg" alt="Imagen de Bolsa 3D" class="product-image">
+                </div>
+                <h2>Bolsa de Transporte 3D</h2>
+                <p>Ideal para transportar productos delicados</p>
+                <p class="price"></p>
+                <button class="add-to-cart">Comprar</button>
+            </article>
+            <article class="product" data-id="2" data-name="Bolsa Reforzada" data-price="39.99">
+                <div class="product-image-container">
+                    <img  style="height: 150px;width: 200px;"src="./portabolsas.jpg" alt="Imagen de Bolsa Reforzada" class="product-image">
+                </div>
+                <h2>Bolsa Reforzada</h2>
+                <p>Mayor resistencia para productos pesados</p>
+                <p class="price">$999.99</p>
+                <button class="add-to-cart">Añadir al Carrito</button>
+            </article>
+        </section>
+    </main>
+    <aside id="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button id="checkout">Pagar</button>
+    </aside>
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/transportador_de_bolsas/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Tecnology. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
